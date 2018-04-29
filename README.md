@@ -66,6 +66,10 @@ The parameters varied and their levels are:
 * `turn_rate_max_t_1` (rad/s): 0.25, 0.5, 0.75, 1.0, 1.25, 1.5
 * `allow_prey_switching_t_2_predator`: True, False
 
+Once the data is loaded, choose 'Stability Analysis' from the menu tab on the left.
+Select the three parameters above and 'score' for a target variable to see stability 
+table.
+
 
 `shinyApp/data/pred-prey-lhs-small.csv` contains results from nearly 7,000
 SCRIMMAGE runs in which the same variables were varied using Latin
@@ -74,9 +78,20 @@ Hypercube Sampling
 overview of this technique).
 This data is provided to more clearly demonstrate the capabilities of the 
 visualization overview; please note that it is not intended for use with the 
-stability analysis aspects of this tool.
+stability analysis aspects of this tool. 
 The ranges of these variables are:
 * `max_speed_t_2_predator` (m/s): [30, 50)
 * `turn_rate_max_t_1` (rad/s): [0.25, 1.5)
 * `allow_prey_switching_t_2_predator`: True, False
 
+Select desired options from the menu tab on the left.
+* `Correlation'
+* `Clustering'
+* `Scatter Plot'
+* `Modeling'
+
+The first three menus provide data visualization. Select parameters of interest
+dynamically to visualize the relationship between the parameters.
+'Modeling' provides fitting options with six different models. At selection of the
+model, diagnostic graphs or prediction-actual comparison graphs are shown on top and 
+description of fitted model is shon below the graphs.
